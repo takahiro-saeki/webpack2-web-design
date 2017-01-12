@@ -1,1 +1,2 @@
-console.log('test')
+import sample from './js/sample';
+console.log(sample)
