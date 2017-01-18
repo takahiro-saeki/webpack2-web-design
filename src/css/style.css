@@ -98,3 +98,21 @@ li {
 .flex-adjust {
   size: 100% 100%;
 }
+
+.btn {
+  transition: .5s;
+  size: 100% auto;
+  background: #00acc1;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #FFF;
+  font-size: 1.2rem;
+  appearance: none;
+  border: 1px solid #00acc1;
+  margin: 3rem 1rem;
+  &:hover {
+    background: #FFF;
+    color: #00acc1;
+  }
+}
