@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: ['./index.js', './index.ejs'],
+  entry: ['./index.js', './ejs/index.ejs'],
   output: {
     filename: 'app.bundle.js',
     path: resolve(__dirname, 'dist'),
@@ -22,13 +22,17 @@ module.exports = {
         test: /\.css$/,
         loaders: [
           'style-loader',
-          'css-loader?modules',
+          'css-loader',
           'postcss-loader',
         ],
       },
       {
         test: /\.ejs$/,
         loader: 'ejs-compiled'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader?mimetype=image/jpg'
       },
     ],
   },
@@ -43,12 +47,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack2 example',
-      template: '../src/index.ejs'
+      template: '../src/ejs/index.ejs'
     }),
     new HtmlWebpackPlugin({
       title: 'webpack2 example',
-      template: '../src/test.ejs',
-      filename: 'test.html'
+      template: '../src/ejs/detail.ejs',
+      filename: 'detail.html'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
