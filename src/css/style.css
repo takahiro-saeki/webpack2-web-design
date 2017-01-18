@@ -63,8 +63,11 @@ li {
   text-align: center;
 }
 
-.card-basic {
+.card-margin {
   margin: .5rem;
+}
+
+.card-basic {
   transition: .5s;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
               0 1px 5px 0 rgba(0,0,0,0.12),
@@ -80,4 +83,18 @@ li {
 
 .related-margin {
   padding: 1rem;
+}
+
+.detail-header {
+  margin: 0;
+  padding: 1rem 1rem .5rem 1rem;
+  border-bottom: 1px dashed #CCC;
+}
+
+.detail-description {
+  padding: 1rem;
+}
+
+.flex-adjust {
+  size: 100% 100%;
 }
