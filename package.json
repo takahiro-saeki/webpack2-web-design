@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/takahiro-saeki/webpack2-web-design#readme",
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "babel": "^6.5.2",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -34,6 +35,8 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.26.0",
     "postcss-loader": "^1.2.1",
+    "postcss-size": "^1.1.1",
+    "precss": "^1.4.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.1.0-beta.20",

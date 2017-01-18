@@ -2,6 +2,20 @@ body {
   margin: 0;
 }
 
+a {
+  &:visited {
+    color: black;
+  }
+  &:link {
+    color: black;
+  }
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
 .responsive-img {
   max-width: 100%;
   height: auto;
@@ -11,4 +25,59 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-basic {
+  z-index: 100;
+  size: 100% auto;
+  position: fixed;
+  background: #00acc1;
+  color: #FFF;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+              0 1px 5px 0 rgba(0,0,0,0.12),
+              0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.list-basic {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-basic {
+  background: #4A4A4A;
+  color: #909090;
+  padding: 1rem;
+}
+
+.copyright-basic {
+  background: #383838;
+  color: #FFF;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-basic {
+  margin: .5rem;
+  transition: .5s;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+              0 1px 5px 0 rgba(0,0,0,0.12),
+              0 3px 1px -2px rgba(0,0,0,0.2);
+  &:hover {
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  }
+}
+
+.card-description {
+  padding: .5rem;
+}
+
+.related-margin {
+  padding: 1rem;
 }

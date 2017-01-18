@@ -36,6 +36,13 @@ module.exports = {
       },
     ],
   },
+  postcss: () => {
+  return [
+    require('precss'),
+    require('autoprefixer'),
+    require('postcss-size')
+  ];
+},
   devServer: {
     hot: true,
     inline: true,
