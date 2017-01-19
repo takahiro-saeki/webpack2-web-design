@@ -1,6 +1,7 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: ['./index.js', './ejs/index.ejs'],
@@ -11,38 +12,42 @@ module.exports = {
   },
   context: resolve(__dirname, 'src'),
   module: {
-    loaders: [
-      { test: /\.js$/,
-        loaders: [
-          'babel-loader',
-        ],
-        exclude: /node_modules/
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
-        loaders: [
+        use: [
           'style-loader',
           'css-loader',
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: () => {
+                return [
+                  require('precss'),
+                  require('autoprefixer'),
+                  require('postcss-size')
+                ];
+              }
+            }
+          }
         ],
       },
       {
         test: /\.ejs$/,
-        loader: 'ejs-compiled'
+        loader: 'ejs-compiled-loader'
       },
       {
         test: /\.(png|jpg)$/,
         loader: 'url-loader?mimetype=image/jpg'
-      },
+      }
     ],
   },
-  postcss: () => {
-  return [
-    require('precss'),
-    require('autoprefixer'),
-    require('postcss-size')
-  ];
-},
   devServer: {
     hot: true,
     inline: true,
@@ -54,11 +59,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack2 example',
-      template: '../src/ejs/index.ejs'
+      template: path.join(__dirname, './src/ejs/index.ejs')
     }),
     new HtmlWebpackPlugin({
       title: 'webpack2 example',
-      template: '../src/ejs/detail.ejs',
+      template: path.join(__dirname, './src/ejs/detail.ejs'),
       filename: 'detail.html'
     }),
     new webpack.HotModuleReplacementPlugin()

@@ -28,7 +28,9 @@
     "babel-preset-stage-2": "^6.18.0",
     "css-loader": "^0.26.1",
     "ejs-compiled-loader": "^1.1.0",
+    "ejs-html-loader": "^2.0.2",
     "ejs-loader": "^0.3.0",
+    "ejs-render-loader": "^1.0.0",
     "extract-loader": "^0.1.0",
     "file-loader": "^0.9.0",
     "flexboxgrid": "^6.3.1",
@@ -39,7 +41,7 @@
     "precss": "^1.4.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.20",
+    "webpack": "^2.1.0-beta.28",
     "webpack-dev-server": "^2.1.0-beta.0"
   }
 }
