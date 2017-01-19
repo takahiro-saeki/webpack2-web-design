@@ -8,6 +8,9 @@ Organizing directory's hierarchies. Please wait for downloading this repository.
 - Organizing build environment.
 - achieve a using easily and simple.
 
+##sample pages
+[this is sample pages](https://takahiro-saeki.github.io/webpack2-web-design/dist/).
+
 ##USAGE
 ```
 $ npm i
