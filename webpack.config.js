@@ -1,4 +1,3 @@
-const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -11,10 +10,10 @@ module.exports = {
   ],
   output: {
     filename: 'app.bundle.js',
-    path: resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: './'
   },
-  context: resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'src'),
   performance: {
     hints: false
   },
@@ -54,7 +53,7 @@ module.exports = {
   devServer: {
     hot: true,
     inline: true,
-    contentBase: resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     historyApiFallback: true,
     open: true
