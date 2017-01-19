@@ -4,13 +4,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: ['./index.js', './ejs/index.ejs'],
+  entry: [
+    './index.js',
+    './ejs/index.ejs',
+    './ejs/detail.ejs'
+  ],
   output: {
     filename: 'app.bundle.js',
     path: resolve(__dirname, 'dist'),
     publicPath: '/'
   },
   context: resolve(__dirname, 'src'),
+  performance: {
+    hints: false
+  },
   module: {
     rules: [
       {
