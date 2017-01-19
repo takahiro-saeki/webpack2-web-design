@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: 'app.bundle.js',
     path: resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: './'
   },
   context: resolve(__dirname, 'src'),
   performance: {
@@ -48,10 +48,6 @@ module.exports = {
       {
         test: /\.ejs$/,
         loader: 'ejs-compiled-loader'
-      },
-      {
-        test: /\.(png|jpg)$/,
-        loader: 'url-loader?mimetype=image/jpg'
       }
     ],
   },
@@ -69,7 +65,7 @@ module.exports = {
       template: path.join(__dirname, './src/ejs/index.ejs')
     }),
     new HtmlWebpackPlugin({
-      title: 'webpack2 example',
+      title: 'webpack2 example/ detail',
       template: path.join(__dirname, './src/ejs/detail.ejs'),
       filename: 'detail.html'
     }),

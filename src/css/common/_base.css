@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+a {
+  &:visited {
+    color: black;
+  }
+  &:link {
+    color: black;
+  }
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
