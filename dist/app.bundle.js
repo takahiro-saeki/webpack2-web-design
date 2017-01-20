@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "68b86cfac28a22590111"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4fef5c5d469c19748ae9"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1071,7 +1071,7 @@ module.exports = function anonymous(locals, filters, escape, rethrow) {
     };
     var __stack = {
         lineno: 1,
-        input: '<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <title><%= htmlWebpackPlugin.options.title %></title>\n  </head>\n  <body>\n    <%- include src/ejs/common/header -%>\n    <%- include src/ejs/common/description -%>\n    <%- include src/ejs/common/footer -%>\n    <%- include src/ejs/common/copyright -%>\n  </body>\n</html>\n',
+        input: '<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <meta name="viewport" content="width=device-width,initial-scale=1.0" />\n    <title><%= htmlWebpackPlugin.options.title %></title>\n  </head>\n  <body>\n    <%- include src/ejs/common/header -%>\n    <%- include src/ejs/common/description -%>\n    <%- include src/ejs/common/footer -%>\n    <%- include src/ejs/common/copyright -%>\n  </body>\n</html>\n',
         filename: "."
     };
     function rethrow(err, str, filename, lineno) {
@@ -1088,7 +1088,7 @@ module.exports = function anonymous(locals, filters, escape, rethrow) {
         var buf = [];
         with (locals || {}) {
             (function() {
-                buf.push('<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <title>', escape((__stack.lineno = 5, htmlWebpackPlugin.options.title)), "</title>\n  </head>\n  <body>\n    " + function() {
+                buf.push('<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <meta name="viewport" content="width=device-width,initial-scale=1.0" />\n    <title>', escape((__stack.lineno = 6, htmlWebpackPlugin.options.title)), "</title>\n  </head>\n  <body>\n    " + function() {
                     var buf = [];
                     buf.push('<header class="container-fluid nav-basic">\n  <nav class="row">\n    <div class="col-xs-12">webpack2-webdesigner example</div>\n  </nav>\n</header>\n');
                     return buf.join("");
@@ -1131,7 +1131,7 @@ module.exports = function anonymous(locals, filters, escape, rethrow) {
     };
     var __stack = {
         lineno: 1,
-        input: '<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <title><%= htmlWebpackPlugin.options.title %></title>\n  </head>\n  <body>\n    <%- include src/ejs/common/header -%>\n    <%- include src/ejs/common/topImage -%>\n    <%- include src/ejs/common/list -%>\n    <%- include src/ejs/common/footer -%>\n    <%- include src/ejs/common/copyright -%>\n  </body>\n</html>\n',
+        input: '<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <meta name="viewport" content="width=device-width,initial-scale=1.0" />\n    <title><%= htmlWebpackPlugin.options.title %></title>\n  </head>\n  <body>\n    <%- include src/ejs/common/header -%>\n    <%- include src/ejs/common/topImage -%>\n    <%- include src/ejs/common/list -%>\n    <%- include src/ejs/common/footer -%>\n    <%- include src/ejs/common/copyright -%>\n  </body>\n</html>\n',
         filename: "."
     };
     function rethrow(err, str, filename, lineno) {
@@ -1148,7 +1148,7 @@ module.exports = function anonymous(locals, filters, escape, rethrow) {
         var buf = [];
         with (locals || {}) {
             (function() {
-                buf.push('<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <title>', escape((__stack.lineno = 5, htmlWebpackPlugin.options.title)), "</title>\n  </head>\n  <body>\n    " + function() {
+                buf.push('<!DOCTYPE html>\n<html>\n  <head>\n    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>\n    <meta name="viewport" content="width=device-width,initial-scale=1.0" />\n    <title>', escape((__stack.lineno = 6, htmlWebpackPlugin.options.title)), "</title>\n  </head>\n  <body>\n    " + function() {
                     var buf = [];
                     buf.push('<header class="container-fluid nav-basic">\n  <nav class="row">\n    <div class="col-xs-12">webpack2-webdesigner example</div>\n  </nav>\n</header>\n');
                     return buf.join("");
